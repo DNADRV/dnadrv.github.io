@@ -1,41 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The DNA Biodiversity Drive</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 100%;
-            overflow: hidden;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .contact {
-            margin-top: 20px;
-            padding: 10px;
-            border-top: 2px solid #333;
-        }
-    </style>
+	<link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
 
-<div class="container">
-    <iframe width=100% height="600px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=lW6z0VAN6UKVj7Y_qQa-qs8uXg6pLZpItJMuNjo-eEVUNVdER0pEWUJZQTExRThCRDREVlBIM1IxNC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+<body>	
+	<!--HEADER-->
+	<div class="header">
+	<a href="https://www.dnadrv.com">
+	<img src="images/DNADRV_plate.png" alt="DNADRV logo" class="responsive" style="display: block;max-height:200px;margin: auto;padding:0.5%">
+	</a>
+	</div>
+	
+	<!--Menu START-->
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<div class="topnav" id="myTopnav">
+		  <a href="index.html" class="active">Home</a>
+		  <a href="metadata.html">Enter Data</a>
+		  <a href="contact.html">Contact</a>
+		  <a href="news.html">News</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<button style="font-size:24px;color:white; background-color:#333">Menu <i class="fa fa-car"></i></button>
+		  </a>
+		</div>
+		
+		<!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon-->
+		<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myTopnav").style.top = "0";
+		  } else {
+			document.getElementById("myTopnav").style.top = "0px";
+		  }
+		}
+		</script>
+	<!--Menu END-->
+	
+	<!-- ***************  SECTION 1 - Small about  *************** -->
+<div>
+<h2>We need YOUR help to sample insects on your next journey!</h2>
 </div>
-<div class="container">
-    <img src="images/Header.jpg" alt="DNA Image">
+
+
+
+<div class="news_flex">
+	<div class="image">
+		<img src="images/VC_About_full.jpg" alt="traditional food" class="responsive" style="width: 100%">
+	</div>
+	<div class="text">
+		<h2>What is the DNADRV?</h2>
+		<p>The DNADRV (DNA Drive) project seeks to explore the insect biodiversity in Aotearoa-NZ by swabbing any DNA traces that remain after insects collide with car license plates. The aim is to try and collect 6,000 samples across Aotearoa-NZ’s mainland over the next year (starting mid 2025).</p>
+		<p> Each of the 6,000 samples are paired, as a background swab is taken (after cleaning the plate) to identify any insects that may have been on the number plate prior to cleaning, and then another swab is taken after a car drive to identify newly collided insects. The car route is recorded to map the rough location of the insects. Although the resulting dataset will consist of insect species, it is also possible that other organisms such as bacteria, fungi, and plants will be able to be detected.</p>
+		<p>Our first trial run was in March 2024, where we collaborated with the Auckland Vintage and Veteran Car Club. We cleaned and swabbed 19 of their car number plates before an ~2hr rally around south Auckland, and we swabbed the plates again when they finished driving. The most abundant of these was fungus gnats (50%), striped dung flies (14.7%), and coddling moths (9.3%). Other insects indentified included soldier flies and rove beetles. As predicted, because cars drove the same route the insect assemblage was largely coherent.</p>
+		<img src="images/Insects_detected.png" alt="traditional food" class="responsive" style="width: 100%">
+	</div>
+
 </div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides fade">
+    <q>Fun for the kids, they got to do the whole process and be scientists for the night.</q>
+    <p class="author">- Gemma Benson</p>
+  </div>
+
+  <div class="mySlides fade">
+    <q>This is a very easy to use system and the instructions are very easy to follow.</q>
+    <p class="author">- Aimey</p>
+  </div>
+
+  <div class="mySlides fade">
+    <q>Interesting to see what bugs were on there.</q>
+    <p class="author">- FangFei</p>
+  </div>
+
+  <div class="mySlides fade">
+    <q>It was really accessible, and something fun to do before and after a trip.</q>
+    <p class="author">- Jane Gardiner</p>
+  </div>
+
+  <div class="mySlides fade">
+    <q>Loved doing citizen science, excited to see results.</q>
+    <p class="author">- Jack Crawford</p>
+  </div>
+
+  <div class="mySlides fade">
+    <q>The collection kits were super easy to use!</q>
+    <p class="author">- Catherine</p>
+  </div>
+
+  <div class="mySlides fade">
+    <q>Engaging with nature and science!</q>
+    <p class="author">- Mhairi</p>
+  </div>
+
+  <div class="mySlides fade">
+    <q>Feels like I'm helping research!</q>
+    <p class="author">- Anon</p>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<!--FOOTER-->
+<div class="footer">
+	<a href="https://www.dnadrv.com">
+	<img src="images/DNADRV_plate.png" alt="DNADRV logo" class="responsive" style="display: block;max-height:200px;margin: auto;padding:0.5%">
+	</a>
+	</div>	
+<div class="logo_flex">
+	<div class="image"><a href ="https://www.auckland.ac.nz/en.html"><img src="images/UOA.png" alt="University of Auckland" class="responsive" style="width: 100%"></a></div>
+	<div class="image"><a href ="https://www.ngaarawhetu.org/"><img src="images/NAW.png" alt="Nga Ara Whetu" class="responsive" style="width: 100%"></a></div>
+	<div class="image"><a href="https://ml4sg.auckland.ac.nz/"><img src="images/ML.png" alt="Machine Learning for Social Good" class="responsive" style="width: 100%"></a></div>
+	<div class="image"><a href="https://www.climatechange.ai/"><img src="images/CCAI_logo.jpg" alt="Climate Change AI" class="responsive" style="width: 100%; background: white;"></a></div>
+
+	
+	
+</div>
+
+</body>
+
+<div>
+
 
 </body>
 </html>
