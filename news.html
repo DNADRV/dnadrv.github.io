@@ -17,39 +17,31 @@
 	</a>
 	</div>
 	
-	<!--Menu START-->
-		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-		<div class="topnav" id="myTopnav">
-		  <a href="index.html">Home</a>
-		  <a href="metadata.html">Enter Data</a>
-		  <a href="contact.html">Contact</a>
-		  <a href="news.html" class="active">News</a>
-		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<button style="font-size:24px;color:white; background-color:#333">Menu <i class="fa fa-car"></i></button>
-		  </a>
-		</div>
+<!--Menu START-->
+		<!-- Load an icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="topnav" id="sticky_navbar">
+		  <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+		  <a href="metadata.html"><i class="fa fa-fw fa-car"></i>Enter Data</a>
+		  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+		  <a href="news.html"   class="active"><i class="fa fa-fw fa-newspaper-o"></i>News</a>
+		 </div>
 		
 		<!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon-->
 		<script>
-		function myFunction() {
-		  var x = document.getElementById("myTopnav");
-		  if (x.className === "topnav") {
-			x.className += " responsive";
-		  } else {
-			x.className = "topnav";
-		  }
-		}
-		
-		window.onscroll = function() {scrollFunction()};
+		<!--function for creating sticky navbar-->
+window.onscroll = function() {myFunction()};
 
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			document.getElementById("myTopnav").style.top = "0";
-		  } else {
-			document.getElementById("myTopnav").style.top = "0px";
-		  }
-		}
+var navbar = document.getElementById("sticky_navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 		</script>
 	<!--Menu END-->
 	
