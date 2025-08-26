@@ -36,6 +36,11 @@ h3 { /*used on green sections - section headings*/
 	text-align: center;
 }
 
+h4 { /* used on green lip mussel image*/
+	font-size: 200px;
+	line-height: 1;
+}
+
 /*HEADER*/
 .header {
 	background-image: url('images/Header.jpg');
@@ -144,6 +149,92 @@ h3 { /*used on green sections - section headings*/
 	text-align: justify;
 	background: rgba(246, 142, 70, 1)
 }
+
+
+.plain_flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;     /* aligns image and text centers */
+}
+
+.plain_flex .image {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plain_flex .image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.plain_flex .text {
+  flex: 1 1 80%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 1);
+
+  /* stack heading over paragraph and center the stack vertically */
+  display: flex;
+  flex-direction: column;  /* <- keeps H2 above P */
+  justify-content: center; /* <- vertical centering of the stack */
+  align-items: flex-start; /* <- left-align the block inside */
+  text-align: justify;     /* paragraph justification stays */
+}
+
+.plain_flex .text h2 { 
+  margin: 0 0 .5rem; 
+  line-height: 1.2;
+}
+
+.plain_flex .text p { 
+  margin: 0; 
+}
+
+
+
+.howto_flex {
+	clear:both;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.howto_flex .image {
+	display: flex;
+	flex: 20%;
+}
+
+.howto_flex .image img {
+	background-size: contain;
+	object-fit: contain;
+}
+
+.howto_flex .text {
+	flex: 80%;
+	padding: 20px;
+	text-align: justify;
+	background: rgba(246, 142, 70, 1)
+}
+
+
+
+
+
+.image-with-text {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.image-with-text img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /*Responsiveness*/
 @media screen and (max-width: 785px) {
