@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The DNA Biodiversity Drive</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Teaching aid: red center trigger line */
+    .debug-line {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: red;
+      z-index: 9999;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!--HEADER-->
+  <div class="header">
+    <a href="https://www.dnadrv.com">
+      <img src="images/DNADRV_plate.png" alt="DNADRV logo" class="responsive"
+        style="display: block;max-height:200px;max-width: 100%;margin: auto;padding:0.5%">
+    </a>
+  </div>
+
+  <!--Menu START-->
+  <div class="topnav" id="sticky_navbar">
+    <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="metadata.html"><i class="fa fa-fw fa-car"></i>Enter Data</a>
+    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+    <a href="news.html" class="active"><i class="fa fa-fw fa-newspaper-o"></i>News</a>
+  </div>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("sticky_navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <!--Menu END-->
+
+  <!-- SECTION 1 -->
+
+  <div class="image-with-text">
+    <img src="images/DNADRV_headers-01.svg" alt="Header 1" class="responsive" style="width: 100%">
+    <div class="overlay-heading"></div>
+  </div>
+
+
+  <div class="howto_flex">
+    <div class="text">
+      <p>We have been distributing kits to people around the country. If you'd like a kit, then we can organise this,
+        just use the contact form (<a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>).</p>
+      <p>Once you have a kit you can use it as soon as you like (we will happily give you more). 
+        The journey can be short or long - it's up to you - althoyugh we think that a journey of 20 minutes to 24 hours is best. </p>
+      <p>Just make sure that you tell us where you went on your drive (on the <a href="metadata.html"><i class="fa fa-fw fa-car"></i>Enter Data</a> page) - as well as the date and the time when you were driving. If we don't know this then we don't really learn anything about what animals, plants and microbes
+      are where. </p>
+    </div>
+  </div>
+
+  <div class="image-with-text">
+    <img src="images/DNADRV_headers-02.svg" alt="Header 2" class="responsive" style="width: 100%">
+    <div class="overlay-heading"></div>
+  </div>
+
+
+<div class="plain_flex">
+
+  <div class="plain_flex">
+    <div class="image">
+      <img src="images/glove_on.gif" alt="Glove on" class="responsive" style="width: 100%">
+    </div>
+    <div class="text">
+      <h2> 1. Put on a glove</h2>
+      <p>The glove is to stop you getting soap on your hand - and keep your DNA out of the sample. You can throw the
+        glove away.</p>
+    </div>
+	  
+</div>
+</div>
+
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+	
+<div class="plain_flex">
+
+
+    <div class="image">
+      <img id="wash1" src="images/wash_1.jpg"
+        data-original="images/wash_1.jpg"
+        data-swap="images/1st_wash.gif"
+        alt="1st Wash" class="responsive watch-swap" style="width: 100%">
+    </div>
+    <div class="text">
+      <h2> 2. 1st and 2nd washes</h2>
+      <p>Take the 1st WASH cloth out of the tube and give your number plate a quick wipe all over. Take the 2nd WASH
+        cloth out and do the same. These steps are designed to remove as much of the traces of biological material from
+        the number plate as possible before your drive.</p>
+    </div>
+	  
+</div> 	  
+
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+	
+<div class="plain_flex">
+	  
+    <div class="image">
+      <img id="wash2" src="images/wash_2.jpg"
+        data-original="images/wash_2.jpg"
+        data-swap="images/2nd_WASH.gif"
+        alt="2nd Wash" class="responsive watch-swap" style="width: 100%">
+    </div>
+	  
+    <div class="text">
+      <h2> 3. 1st and 2nd washes</h2>
+      <p>Take the 1st WASH cloth out of the tube and give your number plate a quick wipe all over. Take the 2nd WASH
+        cloth out and do the same. These steps are designed to remove as much of the traces of biological material from
+        the number plate as possible before your drive.</p>
+    </div>
+</div> 	  
+
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+
+	
+	
+<div class="plain_flex">
+
+
+    <div class="image">
+      <img src="images/glove_on.gif" alt="swab 1" class="responsive" style="width: 100%">
+    </div>
+    <div class="text">
+      <h2> 4. Put on a <em>new</em> glove</h2>
+      <p>This new clean glove protects the sample from the enzymes that you have on your fingers that break down DNA.
+        It also keeps your DNA out of the sample.</p>
+    </div>
+	
+</div>
+
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+	
+	
+<div class="plain_flex">
+
+
+    <div class="image">
+      <img src="images/DNADRV_swab_1.jpg" alt="New glove" class="responsive" style="width: 100%">
+    </div>
+    <div class="text">
+      <h2> 5. Get some baseline DNA before your drive</h2>
+      <p>Take the sachet that contains a swab. Rip this open and swab down your number plate. Wiping the whole plate
+        only takes a couple of seconds. Then put the swab into the white labelled 2ml tube. This tube contains a liquid that will
+        preserve the DNA and some grit that will help us get DNA out of the swab in the lab.</p>
+    </div>
+	
+</div>
+	
+
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+	
+<div class="plain_flex">
+	
+  <div class="text">
+      <h2>Why swab before you drive</h2>
+      <p>Wiping your plate should have cleaned most of the DNA off your number plate. However, we
+        don't give you the chemicals that will destroy all the DNA because we don't want to damage you, your clothes or
+        your car. This means that we want to know what DNA remains, so we get you to take a DNA sample for us before you
+        go for a drive.</p>	
+	
+	
+</div>
+
+</div>
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+	
+<div class="plain_flex">
+
+
+  <div class="image-with-text">
+    <img src="images/DNADRV_headers-03.svg" alt="Header 3" class="responsive" style="width: 100%">
+    <div class="overlay-heading"></div>
+  </div>
+
+	
+</div>
+
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+	
+<div class="plain_flex">
+    <div class="image">
+      <img src="images/glove_on.gif" alt="Glove again" class="responsive" style="width: 100%">
+    </div>
+    <div class="text">
+      <h2>1. Put on a glove</h2>
+      <p>The glove is to stop you getting soap on your hand - and keep your DNA off the car.</p>
+    </div>
+</div>
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+
+		
+<div class="plain_flex">
+	  
+    <div class="image">
+      <img id="insect" src="images/insect_pot.jpeg"
+        data-original="images/insect_pot.jpg"
+        data-swap="images/Insect_flick_300.gif"
+        alt="Flick insect" class="responsive watch-swap" style="width: 100%">
+    </div>
+	  
+    <div class="text">
+      <h2>2. See any insects?</h2>
+      <p>Knock any insects that you see stuck on the plate into the yellow pottle. We have some insect experts that can
+        look at them and visually identify what they are. It also makes it more likely that we will discover the faint
+        traces of other insects that have hit your number plate and bounced off (a whole insect tends to dominate the
+        whole sample).</p>
+    </div>
+</div> 	
+	
+</div> 
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+	
+<div class="plain_flex">
+	
+
+<div class="plain_flex">
+	  
+    <div class="image">
+      <img id="swab2" src="images/DNADRV_swab_2.jpg"
+        data-original="images/DNADRV_swab_2.jpg"
+        data-swap="images/DNADRV_swab_2.jpg"
+        alt="swab2" class="responsive watch-swap" style="width: 100%">
+    </div>
+	  
+    <div class="text">
+      <h2>3. Final swab</h2>
+      <p> Take the sachet that contains a swab. Rip this open and swab down your number plate. Then put the swab into the yellow lasbelled 2ml tube. This tube contains DNA preservative and some grit that will help us get nucleic acids out of the swab later.</p>
+    </div>
+</div> 
+	
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+
+	
+<div class="plain_flex">
+
+  <!--FOOTER-->
+  <div class="footer">
+    <a href="https://www.dnadrv.com">
+      <img src="images/DNADRV_plate.png" alt="DNADRV logo footer" class="responsive"
+        style="display: block;max-height:200px;max-width: 100%;margin: auto;padding:0.5%">
+    </a>
+  </div>
+
+  <div class="logo_flex">
+    <div class="image"><a href="https://www.auckland.ac.nz/en.html"><img src="images/UOA.png"
+          alt="University of Auckland" class="responsive" style="width: 100%"></a></div>
+    <div class="image"><a href="https://www.ngaarawhetu.org/"><img src="images/NAW.png" alt="Nga Ara Whetu"
+          class="responsive" style="width: 100%"></a></div>
+    <div class="image"><a href="https://ml4sg.auckland.ac.nz/"><img src="images/ML.png"
+          alt="Machine Learning for Social Good" class="responsive" style="width: 100%"></a></div>
+    <div class="image"><a href="https://www.climatechange.ai/"><img src="images/CCAI_logo.jpg"
+          alt="Climate Change AI" class="responsive" style="width: 100%; background: white;"></a></div>
+  </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const options = {
+      root: null,
+      rootMargin: "-25% 0px -25% 0px",
+      threshold: 0.5
+    };
+
+    let currentActive = null;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const img = entry.target;
+
+        if (entry.isIntersecting && currentActive !== img) {
+          // Turn all other images back to their original
+          document.querySelectorAll('.watch-swap').forEach(i => {
+            i.src = i.getAttribute("data-original");
+          });
+
+          // Then swap in the currently intersecting one
+          img.src = img.getAttribute("data-swap");
+          currentActive = img;
+        }
+
+        // If the active image goes out of view, revert it
+        if (!entry.isIntersecting && currentActive === img) {
+          img.src = img.getAttribute("data-original");
+          currentActive = null;
+        }
+      });
+    }, options);
+
+    document.querySelectorAll('.watch-swap').forEach(img => {
+      observer.observe(img);
+    });
+  });
+</script>
+	
+
+</body>
+</html>
