@@ -143,6 +143,22 @@ h4 { /* used on green lip mussel image*/
 	object-fit: contain;
 }
 
+.news_flex .video {
+  display: flex;
+  justify-content: center; /* centers iframe inside this div */
+  align-items: center;
+  flex: 0 1 600px;          /* sets a max width and allows responsiveness */
+  padding: 20px;
+}
+
+.news_flex .video iframe {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border: none;
+}
+
+
 .news_flex .text {
 	flex: 50%;
 	padding: 20px;
