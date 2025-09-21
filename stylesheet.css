@@ -138,6 +138,14 @@ h4 { /* used on green lip mussel image*/
 	flex: 50%;
 }
 
+.news_flex img {
+	background-size: contain;
+	object-fit: contain;
+	display: flex;
+	flex: 50%;
+	width: 100%;
+}
+
 .news_flex .image img {
 	background-size: contain;
 	object-fit: contain;
