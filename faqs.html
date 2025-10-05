@@ -2,33 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The DNA Biodiversity Drive</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    /* Teaching aid: red center trigger line */
-    .debug-line {
-      position: fixed;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: red;
-      z-index: 9999;
-      pointer-events: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DNA Biodiversity Drive</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+	<link rel="stylesheet" href="stylesheet.css">
+
 </head>
 
-<body>
-  <!--HEADER-->
-
-
-  <!--Menu START-->
-  <div class="topnav" id="sticky_navbar">
+<body>	
+	<!--HEADER-->
+	<div class="header">
+	<a href="https://www.dnadrv.com">
+	<img src="images/DNADRV_plate.png" alt="DNADRV logo" class="responsive" style="display: block;max-height:200px;max-width: 100%;margin: auto;padding:0.5%">
+	</a>
+	</div>
+	
+<!--Menu START-->
+		<!-- Load an icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="topnav" id="sticky_navbar">
     <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
 		  <a href="metadata.html"><i class="fa fa-fw fa-car"></i>Enter Data</a>
 		  <a href="instructions.html"><i class="fa fa-info-circle"></i>Instructions</a>
@@ -36,189 +29,130 @@
 		  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
 		  <a href="news.html"><i class="fa fa-fw fa-newspaper-o"></i>News</a>
   </div>
+		
+		<!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon-->
+		
+		<!--function for creating sticky navbar-->
+		<script>
+		
+window.onscroll = function() {myFunction()};
 
-  <script>
-    window.onscroll = function () { myFunction() };
+var navbar = document.getElementById("sticky_navbar");
+var sticky = navbar.offsetTop;
 
-    var navbar = document.getElementById("sticky_navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script>
-  <!--Menu END-->
-
-  <!-- SECTION 1 -->
-
-
-
-<div class="plain_flex">
-    <div class="text">
-      <h2> FREQUENTLY ASKED QUESTIONS </h2>
-    </div> 
-</div> 	
-  
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: How long should the journey be? </h2>
-      <p> A: Ideally longer than 20 minutes, but less than 24 hours. </p>
-    </div>
-	  
-</div> 	  
-
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: Is there a specific time I should sample? </h2>
-      <p> A: No, different insects fly about during different parts of the day. Any time is perfect!</p>
-    </div>
-	  
-</div> 	
-
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: Can I collect a sample in any weather? </h2>
-      <p>A: Yes, absolutely! We are interested in knowing what insects are present during all weather, but please only when it is safe to do so.</p>
-    </div>
-	  
-</div> 	
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+		</script>
+	<!--Menu END-->
 	
-	
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: What should I know before I decide to sample on my journey? </h2>
-      <p>A: On each sampling kit bag is space for you to take notes. For example, the date and time, start location and destination, the weather, etc... We then would really appreciate if this data entered into the form on the DNADRV website - quick access by scanning the QR code on the front of the kit. <em>By entering the data on the website you go into the monthly draw to win a pack of Insects of New Zealand playing cards!</em></p>
-    </div>
-	  
-</div> 		
+	<!-- ***************  SECTION 1 - FAQs collapse  *************** -->
 
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: How clean must the number plate be before I start my journey? </h2>
-      <p> A: The cleaner the better, but we don't expect you to clean it for very long. If you can just be sure to give the number plate a thorough clean with WASH 1 and a thorough wipe with WASH 2, that would be very helpful. If your number plate is very dirty and you have access to warm soapy water, then a quick scrub would help loosen any dried material.</p>
-    </div>
-	  
-</div> 	
-	
-	
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: When is my last opportunity to sample? </h2>
-      <p>A: DNADRV’s sampling effort runs until the end of March 2026.</p>
-    </div>
-	  
-</div> 		
-	
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: How do I avoid contamination? And what do I do if I am <em>allergic</em> to latex? </h2>
-      <p>A: Every kit has three latex gloves provided to help minimise human contamination. Latex gloves provide a superior fit, more comfort, and better tactile sensitivity. <em>If you have a latex allergy, please do not use the gloves! </em>You are welcome to still sample for us, but please note in your data entry form that no gloves were worn.
-</p>
-    </div>
-</div> 
-	
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: When will I get the results?</h2>
-      <p>A: Extracting, amplifying and sequencing DNA is expensive and takes time. We can minimise costs by waiting till we have a couple of thousand samples and then processing these in "bulk", which saves a lot of money. However, this means waiting a little while for samples to accumulate.</p>
-    </div>
-</div> 
-	
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: How do you identify the insect species? </h2>
-      <p>A: A little bit like forensics. We use the trace DNA that the insects leave behind once they have collided with the number plate. We then use certain markers in DNA to identify the species. </p>
-    </div>
-</div> 
-	
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: What happens to all the plastic waste? </h2>
-      <p>A: We do our best to minimize plastic waste by reusing as much as we possibly can. Please throw away WASH 1 and WASH 2 cloths, gloves and swab wrappers after use. Everything else please place back into your sample kit bag.</p>
-    </div>
-</div> 
-	
-<div class="plain_flex">
-    <div class="text">
-      <h2> Q: How old do I have to be to do this? </h2>
-      <p>A: We encourage participation of all ages, however, we do advise that those 13 and younger would likely require additional guidance from an adult.</p>
-    </div>
-	
-</div> 		
-	
-	
-<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+<h2>FREQUENTLY ASKED QUESTIONS</h2>
+<h3>A question you have isn't here? Please click on the <a href="contact.html">Contact</a> page and pop us a message.</h3>
 
-	
-<div class="plain_flex">
-	
-<hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+<button class="accordion">Where do I get and/or return a kit?</button>
+<div class="panel">
+  <p>DNADRV is continuously expanding and so we will frequently be updating our pick-up and drop-off locations for the kits. The current location list can be found <a href="contact.html">here</a>. If needed, we will try our best to make other arrangements to get the kits to you. </p>
+</div>
 
-	
-<div class="plain_flex">
+<button class="accordion">How should I store the kits and how soon must I get them back to you?</button>
+<div class="panel">
+  <p>All kits need to be received before the end of March 2026. The kits have a long shelf life at room temperature, but the sooner we get the kits back, the sooner we can start processing them. If possible, storing them out of direct sunlight would be preferred. The reason is to prevent any evaporation from taking place in the event that a tube has not been shut tight.</p>
+</div>
 
-  <!--FOOTER-->
-  <div class="footer">
-    <a href="https://www.dnadrv.com">
-      <img src="images/DNADRV_plate.png" alt="DNADRV logo footer" class="responsive"
-        style="display: block;max-height:200px;max-width: 100%;margin: auto;padding:0.5%">
-    </a>
-  </div>
+<button class="accordion">How long should the journey be?</button>
+<div class="panel">
+  <p>Ideally longer than 20 minutes, but less than 24 hours.</p>
+</div>
 
-  <div class="logo_flex">
-    <div class="image"><a href="https://www.auckland.ac.nz/en.html"><img src="images/UOA.png"
-          alt="University of Auckland" class="responsive" style="width: 100%"></a></div>
-    <div class="image"><a href="https://www.ngaarawhetu.org/"><img src="images/NAW.png" alt="Nga Ara Whetu"
-          class="responsive" style="width: 100%"></a></div>
-    <div class="image"><a href="https://ml4sg.auckland.ac.nz/"><img src="images/ML.png"
-          alt="Machine Learning for Social Good" class="responsive" style="width: 100%"></a></div>
-    <div class="image"><a href="https://www.climatechange.ai/"><img src="images/CCAI_logo.jpg"
-          alt="Climate Change AI" class="responsive" style="width: 100%; background: white;"></a></div>
-  </div>
+<button class="accordion">Is there a specific time I should sample?</button>
+<div class="panel">
+  <p>No, different insects fly about during different parts of the day. Any time is perfect!</p>
+</div>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const options = {
-      root: null,
-      rootMargin: "-25% 0px -25% 0px",
-      threshold: 0.5
-    };
+<button class="accordion">Can I collect a sample in any weather?</button>
+<div class="panel">
+  <p>Yes, absolutely! We are interested in knowing what insects are present during all weather, but please only when it is safe to do so.</p>
+</div>
 
-    let currentActive = null;
+<button class="accordion">What should I know before I decide to sample on my journey?</button>
+<div class="panel">
+  <p>On each sampling kit bag is space for you to take notes. For example, the date and time, start location and destination, the weather, etc... We then would really appreciate if this data entered into the form on the DNADRV website - quick access by scanning the QR code on the front of the kit. <em>By entering the data on the website you go into the monthly draw to win a pack of Insects of New Zealand playing cards!</em></p>
+</div>
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const img = entry.target;
+<button class="accordion">How clean must the number plate be before I start my journey?</button>
+<div class="panel">
+  <p>The cleaner the better, but we don't expect you to clean it for very long. If you can just be sure to give the number plate a thorough clean with WASH 1 and a thorough wipe with WASH 2, that would be very helpful. If your number plate is very dirty and you have access to warm soapy water, then a quick scrub would help loosen any dried material.</p>
+</div>
 
-        if (entry.isIntersecting && currentActive !== img) {
-          // Turn all other images back to their original
-          document.querySelectorAll('.watch-swap').forEach(i => {
-            i.src = i.getAttribute("data-original");
-          });
+<button class="accordion">When is my last opportunity to sample?</button>
+<div class="panel">
+  <p>DNADRV’s sampling effort runs until the end of March 2026.</p>
+</div>
 
-          // Then swap in the currently intersecting one
-          img.src = img.getAttribute("data-swap");
-          currentActive = img;
-        }
+<button class="accordion">How do I avoid contamination? And what do I do if I am <em>allergic</em> to latex?</button>
+<div class="panel">
+  <p>Every kit has three latex gloves provided to help minimise human contamination. Latex gloves provide a superior fit, more comfort, and better tactile sensitivity. <em>If you have a latex allergy, please do not use the gloves! </em>You are welcome to still sample for us, but please note in your data entry form that no gloves were worn.</p>
+</div>
 
-        // If the active image goes out of view, revert it
-        if (!entry.isIntersecting && currentActive === img) {
-          img.src = img.getAttribute("data-original");
-          currentActive = null;
-        }
-      });
-    }, options);
+<button class="accordion">When will I get the results?</button>
+<div class="panel">
+  <p>Extracting, amplifying and sequencing DNA is expensive and takes time. We can minimise costs by waiting till we have a couple of thousand samples and then processing these in "bulk", which saves a lot of money. However, this means waiting a little while for samples to accumulate.</p>
+</div>
 
-    document.querySelectorAll('.watch-swap').forEach(img => {
-      observer.observe(img);
-    });
+<button class="accordion">How do you identify the insect species?</button>
+<div class="panel">
+  <p>A little bit like forensics. We use the trace DNA that the insects leave behind once they have collided with the number plate. We then use certain markers in DNA to identify the species.</p>
+</div>
+
+<button class="accordion">What happens to all the plastic waste?</button>
+<div class="panel">
+  <p>We do our best to minimize plastic waste by reusing as much as we possibly can. Please throw away WASH 1 and WASH 2 cloths, gloves and swab wrappers after use. Everything else please place back into your sample kit bag.</p>
+</div>
+
+<button class="accordion">How old do I have to be to do this?</button>
+<div class="panel">
+  <p>We encourage participation of all ages, however, we do advise that those 13 and younger would likely require additional guidance from an adult.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
   });
+}
 </script>
+
+<!--FOOTER-->
+<br></br>
+<div class="footer">
+	<a href="https://www.dnadrv.com">
+	<img src="images/DNADRV_plate.png" alt="DNADRV logo" class="responsive" style="display: block;max-height:200px;max-width: 100%;margin: auto;padding:0.5%">
+	</a>
+	</div>	
+<div class="logo_flex">
+	<div class="image"><a href ="https://www.auckland.ac.nz/en.html"><img src="images/UOA.png" alt="University of Auckland" class="responsive" style="width: 100%"></a></div>
+	<div class="image"><a href ="https://www.ngaarawhetu.org/"><img src="images/NAW.png" alt="Nga Ara Whetu" class="responsive" style="width: 100%"></a></div>
+	<div class="image"><a href="https://ml4sg.auckland.ac.nz/"><img src="images/ML.png" alt="Machine Learning for Social Good" class="responsive" style="width: 100%"></a></div>
+	<div class="image"><a href="https://www.climatechange.ai/"><img src="images/CCAI_logo.jpg" alt="Climate Change AI" class="responsive" style="width: 100%; background: white;"></a></div>
+
 	
+	
+</div>
 
 </body>
 </html>
