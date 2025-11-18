@@ -133,6 +133,14 @@ h4 { /* used on green lip mussel image*/
 	justify-content: center;
 }
 
+.news_flex2 {
+	clear:both;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .news_flex .image {
 	display: flex;
 	flex: 50%;
@@ -262,7 +270,8 @@ h4 { /* used on green lip mussel image*/
 
 /*Responsiveness*/
 @media screen and (max-width: 785px) {
-	.news_flex .image { /*for CONTENT SECTION 1 NOURISH YOUR BODY INDEX*/
+	
+.news_flex .image { /*for CONTENT SECTION 1 NOURISH YOUR BODY INDEX*/
 		display: flex;
 		flex: 80%;
 	}
@@ -400,6 +409,18 @@ q {font-style: italic;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/*DNADRV news page  -this is a really bad fix*/
+@media only screen and (max-width: 382px) {
+  .news_flex2 {
+	clear:both;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+}
+
 
 /*logo*/
 .logo_flex {
