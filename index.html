@@ -63,24 +63,76 @@ function myFunction() {
   </div>
 </div>
 
+<div class="scroll-container">
+  <div class="scroll-text">A big congrats to our lucky October spot prize WINNER 🥳! VJ B, your prize will be on its way to you shortly.</div>
+</div>
+
+<style>
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: #f0f0f0;
+}
+
+.scroll-text {
+  display: inline-block;
+  padding-left: 100%; /* Push it off-screen to the right */
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+
+
+
 
 <div class="news_flex">
 <div class = "text">
 <h2>We need YOUR help to sample insects on your next journey!</h2>
-<p> The DNADRV (DNA Drive) project seeks to explore the insect biodiversity in Aotearoa-NZ by swabbing any DNA traces that remain after insects collide with car license plates. The aim is to try and collect 6,000 samples across Aotearoa-NZ’s mainland over the next year (starting mid 2025). </p>
+<p> The DNADRV (DNA Drive) project seeks to explore the insect biodiversity in Aotearoa-NZ by swabbing any DNA traces that remain after insects collide with car license plates. The aim is to try and collect 6,000 samples across Aotearoa-NZ’s mainland over the next year (starting mid 2025). Head to your local <a href="https://www.dnadrv.com/contact", style = "text-decoration: underline">DNADRV hub</a> to collect a kit!</p>
+</div>
 </div>
 
-<div class="video">
-<iframe  src="https://www.youtube.com/embed/WTPssNQbmDg?autoplay=1&mute=1"> </iframe>
+<div class="news_flex">
+<div style="flex: 50%;
+	padding: 20px;
+	text-align: justify;
+	background: rgba(4, 55, 76, 1);
+	color: white;
+	border: 2px solid white; padding: 20px;">
+<h2>DNADRV on display @ Albany Village Library</h2>
+<p>We are so excited to be a pick up & drop off location. This nationwide project is helping scientists uncover the hidden world of Aotearoa’s insects 🧬 and you can be part of it too! Come chat with us and pick up a free DNADRV sample kit, collect your “insect splatter” from your car’s number plate 🚗, and drop it back here to help map our country’s biodiversity.</p>
+
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Falbanyvillagelibrary%2Fposts%2Fpfbid02vVnDAVwuCz74V87bQbPpR9ojcQZz5fewZ6qPB85gqp723126Gwb323hX9iCYgKWbl&show_text=true&width=500" width="100%" height="827" style="border:none" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</div>
+<div style="flex: 50%;
+	padding: 20px;
+	text-align: justify;
+	background: rgba(4, 55, 76, 1);
+	color: white;
+	border: 2px solid white; padding: 20px;">
+<h2>DNADRV on display @ Grey District Library</h2>
+<p>🚗Going for a drive this weekend?🚗<br>We are now a local pick-up and drop-off point for the DNADRV - The DNA Biodiversity Drive nationwide project, led by Richard and Aimee from the University of Auckland. Insects underpin many ecosystem processes, but the habits of too many are too poorly understood.<br>Are you willing to help science? You simply have to grab a DNADRV kit from the Library.</p>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGreyDistrictLibrary%2Fposts%2Fpfbid02LmcGNK8nFWW5HFnxUhZMmhQDeekWqkar4NuYL2GT6mi4ZsYxpSQgswxpcCQVj5bTl&show_text=true&width=500" width="100%" height="559" style="border:none;" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 </div>
 </div>
+
 
 <div class="news_flex">
 	<div class="image">
 		<img src="images/VC_About_full.jpg" alt="vintage car and man cleaning number plate" class="responsive" style="width: 100%">
 	</div>
 	<div class="text">
-		<h2>DNADRV sampling</h2>
+		<h2>DNADRV sampling process</h2>
 		<p> Each of the 6,000 samples are paired, as a background swab is taken (after cleaning the plate) to identify any insects that may have been on the number plate prior to cleaning, and then another swab is taken after a car drive to identify newly collided insects. The car route is recorded to map the rough location of the insects. Although the resulting dataset will consist of insect species, it is also possible that other organisms such as bacteria, fungi, and plants will be able to be detected.</p>
 		<p>Our first trial run was in March 2024, where we collaborated with the Auckland Vintage and Veteran Car Club. We cleaned and swabbed 19 of their car number plates before an ~2hr rally around south Auckland, and we swabbed the plates again when they finished driving. The most abundant of these was fungus gnats (50%), striped dung flies (14.7%), and coddling moths (9.3%). Other insects indentified included soldier flies and rove beetles. As predicted, because cars drove the same route the insect assemblage was largely coherent.</p>
 		<img src="images/Insects_detected.png" alt="insects" class="responsive" style="width: 100%">
