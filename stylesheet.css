@@ -491,3 +491,7 @@ q {font-style: italic;}
   transition: max-height 0.2s ease-out;
   font-size: 18px;
 }
+
+iframe.myframe {
+    background: #fff;
+}
